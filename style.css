@@ -1,0 +1,40 @@
+body {
+    background-color: #A0FF9F;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 5% 0 0 0;
+    padding: 0;
+}
+section, hr {
+    margin: 0 20%;
+}
+.about {
+    height: 28rem;
+}
+.grid-container {
+    display: grid;
+    height: 25rem;
+    grid-template: repeat(5, 5rem) / repeat(6, 1fr);
+    gap: 5%;
+    align-items: center;
+    justify-items: center;
+}
+.photo {
+    order: -1;
+    grid-row: span 2;
+    border-radius: 50%;
+}
+.name {
+    grid-row: span 2;
+    grid-column: span 5;
+    font-size: xxx-large;
+}
+.about h2 {
+    grid-area: 3 / 2 / 4 / 7;
+    justify-self: baseline;
+}
+.contactme {
+    grid-area: 3 / 1 / 5 / 2;
+}
+.description {
+    grid-area: 4 / 2 / 5 / 7;
+}
